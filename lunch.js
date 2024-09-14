@@ -14,11 +14,11 @@
 */
 
 
-const whatToDoForLunch = function (hungry, availableTime) {
+const whatToDoForLunch = function(hungry, availableTime) {
   if (!hungry) {
     console.log("Let's get back to work.");
     return;
-  };
+  }
 
   if (availableTime < 0) {
     console.log("Time cannot be negative.");
@@ -30,9 +30,9 @@ const whatToDoForLunch = function (hungry, availableTime) {
   } else if (hungry && availableTime <= 30) {
     console.log("Let's try a place nearby");
   } else {
-    console.log("We're in a bootcamp, so we should reconsider how much time we actually have to spare.")
+    console.log("We're in a bootcamp, so we should reconsider how much time we actually have to spare.");
   }
 };
 
-
+whatToDoForLunch(true, 100);
 
